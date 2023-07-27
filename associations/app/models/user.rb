@@ -7,5 +7,6 @@ class User < ApplicationRecord
         primary_key: :id 
     )
 
-    has_many :enrolled_courses, through: :enrollments, source: :courses 
+    has_many :enrolled_courses, through: :enrollments, source: :courses
+    
 end
